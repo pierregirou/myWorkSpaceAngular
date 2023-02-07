@@ -1,0 +1,19 @@
+
+<h1>{{title}}- {{versionAngular}}</h1>
+<p>
+  <a href="https://www.youtube.com/watch?v=vr8-bSIT9iE&t=173s" target="_blank" rel="noopener noreferrer">Youtube tuto Llior Chalma</a>
+</p>
+<p><a href="https://learn.web-develop.me/angular-le-pack-kickstarter?coupon=EARLY-BIRD-ANGULAR" target="_blank" rel="noopener noreferrer">learn.web-develop.me</a>
+</p>
+<label for="age">Entre ton age :</label>
+<input [(ngModel)]="caseOffSwitchValue" type="text" name="age" id="age">
+<div [ngSwitch]="caseOffSwitchValue">
+  <div>
+    <p *ngSwitchCase="5">tu as 5 ans </p>
+    <p *ngSwitchCase="6">tu as 6 ans </p>
+    <p *ngSwitchCase="7">tu as 7 ans </p>
+    <p *ngSwitchCase="8">tu as 8 ans </p>
+    <p *ngSwitchCase="9">tu as 9 ans </p>
+    <p *ngSwitchDefault>Default: tu as {{ caseOffSwitchValue }} ans</p>
+  </div>
+</div>
