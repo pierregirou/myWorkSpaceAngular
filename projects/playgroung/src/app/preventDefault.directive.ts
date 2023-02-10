@@ -8,7 +8,12 @@ export class PreventDefault{
 
     @HostListener('click', ['$event'])
     click(event:Event){
-        event.preventDefault()
+        event.preventDefault();
+        /* return false sur un @HostListener revien à un preventDefault
+        @HostListener('click')
+        click(){
+            return false
+        }*/
     }
     
 }
