@@ -1,13 +1,13 @@
 import { Directive, ElementRef, HostListener, Input, OnInit } from "@angular/core";
 
 @Directive({
-    selector:'[highlight]'
+    selector: '[highlight]'
 })
 export class HighLightDirective implements OnInit {
     bgcolor = 'transparent'
-    constructor(private elementRef:ElementRef<HTMLElement>){}
+    constructor(private elementRef: ElementRef<HTMLElement>) { }
 
-    ngOnInit(){
+    ngOnInit() {
         this.bgcolor = this.backgroundColor
         console.log(this.bgcolor)
     }
@@ -27,12 +27,12 @@ export class HighLightDirective implements OnInit {
      * @param clientX 
      * @param clientY 
      */
-    @HostListener('mouseenter', ['$event.target','$event.clientX', '$event.clientY'])
-    onMouseOver(ev:any,clientX:number,clientY:number){
-        console.log(ev, clientX,clientY)
+    @HostListener('mouseenter', ['$event.target', '$event.clientX', '$event.clientY'])
+    onMouseOver(ev: any, clientX: number, clientY: number) {
+        console.log(ev, clientX, clientY)
         console.log(this.backgroundColor);
         ev.style.backgroundColor = this.bgcolor
-        
+
     }
 
     /**
@@ -41,9 +41,9 @@ export class HighLightDirective implements OnInit {
      * @param clientX 
      * @param clientY 
      */
-    @HostListener('mouseleave', ['$event.target','$event.clientX', '$event.clientY'])
-    onMouseLeave(ev:any,clientX:number,clientY:number){
-        console.log(clientX,clientY)
+    @HostListener('mouseleave', ['$event.target', '$event.clientX', '$event.clientY'])
+    onMouseLeave(ev: any, clientX: number, clientY: number) {
+        console.log(clientX, clientY)
         ev.style.backgroundColor = 'transparente'
     }
 }
