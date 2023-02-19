@@ -5,19 +5,18 @@ import { Component, Input, OnInit } from "@angular/core";
     selector : 'app-counter',
     template : `
         <div class="counter">
-            <button (click)="add()">Ajouter</button>
-            <h1>{{initializeNumber}}</h1>
-            <button (click)="delete()">Enlever</button>
+            <h1>Compteur : {{initializeNumber}}</h1> 
+            <button (click)="add()"> + Increment ({{stepper}})</button>
+            <button (click)="delete()"> - Décrémente ({{stepper}}) </button>
         </div>
     `,
     styles : [`
         .counter{
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
+            text-align: center
         }
         .counter h1{
             border: 1px solid black;
+            border-radius:50px;
             padding:15px
         }
     `]
