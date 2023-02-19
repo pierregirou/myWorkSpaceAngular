@@ -2,6 +2,11 @@
 lorsque qu'un client clique sur le lien il faut arreter le preventDefault  sur les baise <a></a> -->
 <a preventDefault href="www.google.com" target="_blank">lien google</a>
 
+<!-- Exercice 3  faire un component counter avec possibilité d'initialiser le compteur a un chiffre
+ et possibilité de decider de l'incrémenttation de celui-ci -->
+<app-counter [initial-counter]="5" [step]="10"></app-counter>
+<app-counter></app-counter>
+
 <p highlight bg="red">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste facilis culpa tenetur sapiente molestias ea eum soluta? Nihil atque optio, facere tenetur minus neque odit, sapiente ipsum, iste dignissimos alias.>Nobis rerum, beatae deserunt cum quam assumenda, delectus recusandae et, eos maiores iusto quasi. Aut sequi minima debitis dolore iste quaerat corrupti qui ipsa officiis, quod, molestias error vitae sunt.</p>
 
 <!-- Exercie 2:
@@ -9,9 +14,7 @@ lorsque qu'un client clique sur le lien il faut ouvrir une alert avec un message
 ce message peut aussi etres rempli depuis le .html dans un propriété -->
 <a comfirm confirm-message="Es-tu sure de voiloir aller sur le site de Pierre ?" href="http://www.pg-dev.fr" target="_blank">site web pierre</a>
 
-
 <p highlight>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste facilis culpa tenetur sapiente molestias ea eum soluta? Nihil atque optio, facere tenetur minus neque odit, sapiente ipsum, iste dignissimos alias.>Nobis rerum, beatae deserunt cum quam assumenda, delectus recusandae et, eos maiores iusto quasi. Aut sequi minima debitis dolore iste quaerat corrupti qui ipsa officiis, quod, molestias error vitae sunt.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste facilis culpa tenetur sapiente molestias ea eum soluta? Nihil atque optio, facere tenetur minus neque odit, sapiente ipsum, iste dignissimos alias.>Nobis rerum, beatae deserunt cum quam assumenda, delectus recusandae et, eos maiores iusto quasi. Aut sequi minima debitis dolore iste quaerat corrupti qui ipsa officiis, quod, molestias error vitae sunt.</p>
-
 
 <appUser infoUser firstName="pierre" lastName="Girou" job="developper" [hired]="true"></appUser>
 <appUser infoUser firstName="Meriem" lastName="Talbi" job="N3 Sopra" [hired]="true"></appUser>

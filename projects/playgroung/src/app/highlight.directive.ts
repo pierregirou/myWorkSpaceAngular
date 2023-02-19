@@ -1,7 +1,7 @@
 import { Directive, ElementRef, HostListener, Input, OnInit } from "@angular/core";
 
 @Directive({
-    selector: '[highlight]'
+    selector: 'p[highlight]'
 })
 export class HighLightDirective implements OnInit {
     bgcolor = 'transparent'

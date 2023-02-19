@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { ConfirmDirective } from './confirm.directive';
+import { CounterComponent } from './counter.component';
 import { HighLightDirective } from './highlight.directive';
 import { UserInfoComponent } from './infoUser.component';
 import { PreventDefault } from './preventDefault.directive';
@@ -13,7 +14,8 @@ import { PreventDefault } from './preventDefault.directive';
     UserInfoComponent,
     HighLightDirective,
     PreventDefault,
-    ConfirmDirective
+    ConfirmDirective,
+    CounterComponent
   ],
   imports: [
     BrowserModule

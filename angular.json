@@ -3,29 +3,29 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "playgroud": {
+    "playgroung": {
       "projectType": "application",
       "schematics": {},
-      "root": "projects/playgroud",
-      "sourceRoot": "projects/playgroud/src",
+      "root": "projects/playgroung",
+      "sourceRoot": "projects/playgroung/src",
       "prefix": "app",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/playgroud",
-            "index": "projects/playgroud/src/index.html",
-            "main": "projects/playgroud/src/main.ts",
+            "outputPath": "dist/playgroung",
+            "index": "projects/playgroung/src/index.html",
+            "main": "projects/playgroung/src/main.ts",
             "polyfills": [
               "zone.js"
             ],
-            "tsConfig": "projects/playgroud/tsconfig.app.json",
+            "tsConfig": "projects/playgroung/tsconfig.app.json",
             "assets": [
-              "projects/playgroud/src/favicon.ico",
-              "projects/playgroud/src/assets"
+              "projects/playgroung/src/favicon.ico",
+              "projects/playgroung/src/assets"
             ],
             "styles": [
-              "projects/playgroud/src/styles.css"
+              "projects/playgroung/src/styles.css"
             ],
             "scripts": []
           },
@@ -60,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "playgroud:build:production"
+              "browserTarget": "playgroung:build:production"
             },
             "development": {
-              "browserTarget": "playgroud:build:development"
+              "browserTarget": "playgroung:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -71,7 +71,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "playgroud:build"
+            "browserTarget": "playgroung:build"
           }
         },
         "test": {
@@ -81,13 +81,13 @@
               "zone.js",
               "zone.js/testing"
             ],
-            "tsConfig": "projects/playgroud/tsconfig.spec.json",
+            "tsConfig": "projects/playgroung/tsconfig.spec.json",
             "assets": [
-              "projects/playgroud/src/favicon.ico",
-              "projects/playgroud/src/assets"
+              "projects/playgroung/src/favicon.ico",
+              "projects/playgroung/src/assets"
             ],
             "styles": [
-              "projects/playgroud/src/styles.css"
+              "projects/playgroung/src/styles.css"
             ],
             "scripts": []
           }
